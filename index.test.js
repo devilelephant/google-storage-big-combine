@@ -45,8 +45,8 @@ function mockFileList(size, prefix = 'f') {
 function mockFile(name) {
     return {
         name: name,
-        move: function (newName) {
-            this.name = newName.name
+        move: function (targetFile) {
+            targetFile.last = this.last
             return this
         }
     }

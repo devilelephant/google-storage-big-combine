@@ -35,16 +35,15 @@ async function combine(bucket, fileList, file) {
     }
     
     // rename outfile to expected file name
-    let outFile = files[0]
-    if (outFile.name !== file.name) {
+    let topFile = files[0]
+    if (topFile.name !== file.name) {
         try {
-            await outFile.move(file)
-            outfile = file
+            await topFile.move(file)
         } catch (e) {
-            throw new Error(`Failed to move ${outFile.name} to ${file.name}: ${e}`)
+            throw new Error(`Failed to move ${topFile.name} to ${file.name}: ${e}`)
         }
     }
-    return outFile
+    return file
 }
 
 /* Split up an array into even-sized pieces. */

@@ -1,6 +1,6 @@
 {
   "name": "google-storage-big-combine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Overcome google storage combine function max file limit",
   "license": "MIT",
   "repository": "devilelephant/google-storage-big-combine",
@@ -12,7 +12,7 @@
     "storage",
     "combine"
   ],
-  "dependencies": { },
+  "dependencies": {},
   "devDependencies": {
     "jest": "^24.5.0"
   },
